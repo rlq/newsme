@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lq.ren.newsme">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/> <!--震动-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="com.he.func.HeApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.he.func.MainActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.he.func.frist.FristActivity"
+            android:screenOrientation="portrait"
+            />
+        <!--head list channel -->
+        <activity android:name="com.he.func.frist.channel.ChannelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwapBackTheme"
+            />
+
+        <!-- newsDetail -->
+        <activity android:name="com.he.func.frist.fragment.news.FristNewsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwapBackTheme"
+            />
+
+        <activity android:name="com.he.func.frist.fragment.FristNewsDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwapBackTheme"
+            />
+        <!--newsDetail end -->
+
+        <!--first3 start -->
+        <activity android:name="com.he.func.frist.weather.wea.WeatherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwapBackTheme"
+            />
+        <activity android:name="com.he.func.frist.weather.city.CityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwapBackTheme"
+            />
+        <!--first3 end -->
+
+        <!--video -->
+        <activity android:name="com.he.func.video.VideoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.he.func.video.VideoViewActivity"
+            android:screenOrientation="landscape"
+            />
+
+        <!--video end-->
+
+        <!--favorite-->
+        <activity android:name="com.he.func.favorite.FavoriteActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name="com.he.func.favorite.FavoriteItemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwapBackTheme"
+            />
+        <!--favorite end-->
+
+        <!--account start-->
+        <activity android:name="com.he.func.me.AccountActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name="com.he.func.me.AboutmeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwapBackTheme"
+            />
+
+        <activity android:name="com.he.func.me.MoreLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SwapBackTheme"
+            />
+        <!--account end-->
+
+
+
+    </application>
+
+</manifest>

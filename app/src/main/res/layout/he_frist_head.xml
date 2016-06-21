@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/headItemtv"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="@string/news"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textColor="@color/channel_default"/>
+
+</RelativeLayout>

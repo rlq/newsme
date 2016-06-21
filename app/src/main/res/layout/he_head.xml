@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/headList"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_column"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1.0" >
+
+            <com.he.func.frist.FristHeadScrollView
+                android:id="@+id/mColumnHorizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scrollbars="none"
+                >
+                <LinearLayout
+                    android:id="@+id/mRadioGroup_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                     />
+            </com.he.func.frist.FristHeadScrollView>
+
+            <ImageView
+                android:id="@+id/shade_left"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/he_head_leftblock"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/shade_right"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/he_head_rightblock"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_more_columns"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" >
+
+            <ImageView
+                android:id="@+id/button_more_columns"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/he_head_add_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_aeaeae"/>-->
+
+
+</LinearLayout>

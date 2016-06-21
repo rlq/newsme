@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- common-->
+	<color name="color_hint">#FFC7C5C5</color>
+	<color name="color_black">#FF000000</color>
+	<color name="color_white">#FFFFFFFF</color>
+	<color name="color_blue">#FF33A7D3</color>
+	<color name="color_gray">#FF505050</color>
+	<color name="color_red">#FFE26926</color>
+	<color name="color_yellow">#FFFFB02F</color>
+	<color name="transparent">#00000000</color>
+	<color name="chat_text_bg">#575757</color>
+	<color name="bgcolor">#eee</color>
+	<color name="color_ublue">#8290AF</color>
+	<color name="color_ublack">#232323</color>
+	<color name="color_ue">#aeaeae</color>
+
+	<!--program-->
+	<color name="button_backgroud">#0195ff</color>
+	<color name="text_hint">#abb1b6</color>
+	<color name="textDefault">#333333</color>
+	<color name="loading">#727272</color>
+	<color name="headList">#CD3333</color>
+	<color name="channel">#ff2e2e2e</color>
+	<color name="channel_default">#ffcdcdcd</color>
+	<color name="channel_default1">#ffd9d9d9</color>
+	<color name="channel_default2">#fff5f5f5</color>
+	<color name="channel_default5">#ffd9d9d9</color>
+	<color name="login_more_bg">#ffbaf2fe</color>
+	<color name="more_login_bg1">#ff2bb2cf</color>
+	<color name="video_bg_pressed">#ff53c1bd</color>
+
+</resources>

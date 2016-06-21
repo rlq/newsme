@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="favort">赞</string>
+    <string name="conmment">评论</string>
+
+    <string name="confirm_title">提示</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+
+
+    <string name="frist">首页</string>
+    <string name="frist_channel_me">我的频道</string>
+    <string name="frist_channel_des">单击增删频道,长按拖拽排序</string>
+    <string name="frist3_city_switch">切换城市</string>
+    <string name="frist3_city_more"><![CDATA[更多 >>]]></string>
+    <string name="Frist3_localnews">立即查看本地新闻</string>
+    <string name="news">新闻</string>
+    <string name="loading">正在加载...</string>
+
+    <string name="video">视频</string>
+    <string name="video_play">播放视频</string>
+    <string name="video_load">上传视频</string>
+    <string name="loading2">很卖力的加载喔~~~</string>
+    <string name="danmu_close">关闭弹幕</string>
+    <string name="danmu_open">开启弹幕</string>
+    <string name="favorite">关心</string>
+    <string name="fareds">万人关心</string>
+    <string name="fared">已关心</string>
+    <string name="far">关心</string>
+
+    <string name="me">我</string>
+    <string name="morelogin"><![CDATA[更多登录方式 >>]]></string>
+    <string name="photo">头像</string>
+    <string name="nikename">昵称</string>
+    <string name="name">小河</string>
+    <string name="about">关于自己</string>
+    <string name="log_qq">QQ登录 敬请期待</string>
+    <string name="log_tecent">腾讯微博登录 敬请期待</string>
+    <string name="log_sina">新浪微博登录 敬请期待</string>
+    <string name="log_ren">请登录人人网</string>
+    <string name="log_kaixin">请登录开心网</string>
+
+    <string name="app_description">新闻客户端用来演示Material Design以及MVP设计模式的使用</string>
+    <string name="app_github_url">github地址: https://github.com/rlq</string>
+    <string name="author">作者：He</string>
+    <string name="email">邮箱：renjue@gmail.com</string>
+    <string name="blog">博客: http://yyland.com/</string>
+    <string name="medes">登录后 可关注好友评论和收藏</string>
+    <string name="frist_channels">频道管理</string>
+    <string name="frist3_curCity">当前城市--</string>
+
+
+</resources>

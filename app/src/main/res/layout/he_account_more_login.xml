@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/logout_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/logout_op_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/login_more_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/no_login_view"
+            >
+
+            <ImageView
+                android:id="@+id/btn_qzone"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:src="@drawable/he_btn_qq"
+                 />
+
+            <ImageView
+                android:id="@+id/btn_sina"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:src="@drawable/he_btn_sina"
+                 />
+
+            <ImageView
+                android:id="@+id/btn_tencent"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:src="@drawable/he_btn_tencent"
+                 />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="37dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/btn_renren"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/he_btn_renren"
+                     />
+
+                <ImageView
+                    android:id="@+id/btn_kaixin"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/he_btn_kaixin"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/no_login_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/he_background_introduce"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/no_login_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medes"
+            android:textColor="@color/more_login_bg1"
+            android:textSize="13sp"
+            android:layout_above="@+id/no_login_view"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
