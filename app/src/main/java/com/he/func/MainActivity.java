@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,6 +18,7 @@ import com.he.func.favorite.FavoriteActivity;
 import com.he.func.frist.FristActivity;
 import com.he.func.me.AccountActivity;
 import com.he.func.video.VideoActivity;
+import com.he.util.Utils;
 import com.lq.ren.newsme.R;
 
 import java.util.ArrayList;
@@ -40,6 +42,7 @@ public class MainActivity extends ActivityGroup implements View.OnClickListener,
 	private TextView text3;
 	private TextView text4;
 	private ArrayList<View> pageViews;
+	private long lastTime = 0;
 	@Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
@@ -48,39 +51,6 @@ public class MainActivity extends ActivityGroup implements View.OnClickListener,
 		mViewPager = (ViewPager)findViewById(R.id.mian_viewPager);
 		initSelectView();
 		initViewPager();
-
-
-mViewPager.setAdapter(new PagerAdapter() {
-	@Override
-	public int getCount() {
-		return pageViews.size();
-	}
-
-	@Override
-	public boolean isViewFromObject(View view, Object object) {
-		return view == object;
-	}
-
-	@Override
-	public void destroyItem(View view, int id, Object arg2) {
-		((ViewPager) view).removeView(pageViews.get(id));
-	}
-
-	// 获取每一个item的id
-	@Override
-	public Object instantiateItem(View view, int id) {
-		((ViewPager) view).addView(pageViews.get(id));
-		return pageViews.get(id);
-	}
-});
-mViewPager.addOnPageChangeListener(this);
-		mViewPager.setOnTouchListener(new View.OnTouchListener() {
-			@Override
-			public boolean onTouch(View v, MotionEvent event) {
-				return false;
-			}
-		});
-
 	}
 
 	private void initSelectView(){
@@ -108,13 +78,6 @@ mViewPager.addOnPageChangeListener(this);
 	private void initViewPager(){
 		pageViews = new ArrayList<>();
 
-		LayoutInflater layoutInflater = LayoutInflater.from(this);
-
-//		View view1 = layoutInflater.inflate(R.layout.he_frist, null);
-//		View view2 = layoutInflater.inflate(R.layout.he_video, null);
-//		View view3 = layoutInflater.inflate(R.layout.he_favorite, null);
-//		View view4 = layoutInflater.inflate(R.layout.he_account, null);
-
 		View view1 = getLocalActivityManager().startActivity("frist",
 				new Intent(this, FristActivity.class)).getDecorView();
 		View view2 = getLocalActivityManager().startActivity("two",
@@ -127,6 +90,36 @@ mViewPager.addOnPageChangeListener(this);
 		pageViews.add(view2);
 		pageViews.add(view3);
 		pageViews.add(view4);
+		mViewPager.setAdapter(new PagerAdapter() {
+			@Override
+			public int getCount() {
+				return pageViews.size();
+			}
+
+			@Override
+			public boolean isViewFromObject(View view, Object object) {
+				return view == object;
+			}
+
+			@Override
+			public void destroyItem(View view, int id, Object arg2) {
+				((ViewPager) view).removeView(pageViews.get(id));
+			}
+
+			// 获取每一个item的id
+			@Override
+			public Object instantiateItem(View view, int id) {
+				((ViewPager) view).addView(pageViews.get(id));
+				return pageViews.get(id);
+			}
+		});
+		mViewPager.addOnPageChangeListener(this);
+		mViewPager.setOnTouchListener(new View.OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				return false;
+			}
+		});
 	}
 
 	@Override
@@ -203,5 +196,13 @@ mViewPager.addOnPageChangeListener(this);
 			getResources().getColor(R.color.chat_text_bg));
 	}
 
-	
+	@Override
+	public void onBackPressed() {
+		if (System.currentTimeMillis() - lastTime < 2000) {
+			super.onBackPressed();
+		} else {
+			lastTime = System.currentTimeMillis();
+			Utils.showTips(this, "再按一次退出应用");
+		}
+	}
 }
