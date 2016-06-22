@@ -18,7 +18,7 @@ import com.he.config.HeTask;
 import com.he.config.KeyConfig;
 import com.he.func.frist.FristPresenter;
 import com.he.func.frist.FristView;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.ArrayList;
 import java.util.List;

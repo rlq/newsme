@@ -28,7 +28,7 @@ import com.he.func.frist.FristPresenter;
 import com.he.func.frist.weather.WeatherPresenter;
 import com.he.func.frist.FristView;
 import com.he.func.frist.weather.wea.WeatherView;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.ArrayList;
 import java.util.List;

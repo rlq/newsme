@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import com.he.config.HeTask;
 import com.he.util.Utils;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 public class AccountActivity extends Activity implements View.OnClickListener{
 

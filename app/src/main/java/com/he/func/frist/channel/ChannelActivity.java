@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 import com.he.data.frist.weather.ChannelBean;
 import com.he.func.frist.FristPresenter;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.ArrayList;
 

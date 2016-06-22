@@ -20,9 +20,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.he.config.KeyConfig;
 import com.he.util.Utils;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 public class DragGrid extends GridView {
 	/** 点击时 X Y */

@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 public class FavoriteActivity extends Activity {
 

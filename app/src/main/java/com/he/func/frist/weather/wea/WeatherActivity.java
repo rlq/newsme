@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.he.data.frist.weather.WeatherBean;
 import com.he.config.HeTask;
 import com.he.func.frist.weather.WeatherPresenter;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.Calendar;
 import java.util.List;

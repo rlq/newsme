@@ -6,7 +6,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.ArrayList;
 import java.util.List;

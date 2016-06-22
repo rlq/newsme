@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.he.util.Utils;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import me.imid.swipebacklayout.lib.SwipeBackLayout;
 import me.imid.swipebacklayout.lib.app.SwipeBackActivity;

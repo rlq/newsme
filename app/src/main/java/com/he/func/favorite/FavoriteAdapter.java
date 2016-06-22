@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.he.config.HeTask;
 import com.he.data.Friend;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.List;
 

@@ -14,12 +14,11 @@ import android.widget.LinearLayout;
 
 import com.he.config.HeTask;
 import com.he.data.frist.weather.ChannelBean;
-import com.he.config.KeyConfig;
 import com.he.func.frist.channel.ChannelPresenter;
 import com.he.func.frist.fragment.FristNewsFragment;
 import com.he.func.frist.fragment.FristWeatherFragment;
 import com.he.util.Utils;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.ArrayList;
 import java.util.List;

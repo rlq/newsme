@@ -3,7 +3,7 @@ package com.he.func.me;
 
 import android.os.Bundle;
 import com.he.util.Utils;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import me.imid.swipebacklayout.lib.SwipeBackLayout;
 import me.imid.swipebacklayout.lib.app.SwipeBackActivity;

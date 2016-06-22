@@ -37,7 +37,7 @@ import android.widget.LinearLayout;
 
 import com.he.config.KeyConfig;
 import com.he.util.Utils;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.io.IOException;
 import java.io.InputStream;

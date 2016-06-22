@@ -19,7 +19,7 @@ import com.he.func.frist.FristActivity;
 import com.he.func.me.AccountActivity;
 import com.he.func.video.VideoActivity;
 import com.he.util.Utils;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.ArrayList;
 

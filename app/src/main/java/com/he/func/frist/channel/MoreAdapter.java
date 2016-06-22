@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.he.data.frist.weather.ChannelBean;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.List;
 
@@ -57,6 +57,7 @@ public class MoreAdapter extends BaseAdapter {
 		View view = LayoutInflater.from(context).inflate(R.layout.he_channel_item, null);
 		mItemText = (TextView) view.findViewById(R.id.text_item);
 		ChannelBean channel = getItem(position);
+
 		mItemText.setText(channel.getName());
 		if (!isVisible && (position == mChannelList.size()-1)){
 			mItemText.setText("");

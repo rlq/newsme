@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide;
 import com.he.data.frist.news.NewsBean;
 import com.he.func.frist.FristPresenter;
 import com.he.func.frist.FristView;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import org.sufficientlysecure.htmltextview.HtmlTextView;
 

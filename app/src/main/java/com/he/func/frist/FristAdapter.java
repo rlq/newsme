@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.he.data.frist.FristNewsItem;
 import com.he.data.frist.news.NewsBean;
-import com.lq.ren.newsme.R;
+import com.lq.ren.news.R;
 
 import java.util.List;
 
