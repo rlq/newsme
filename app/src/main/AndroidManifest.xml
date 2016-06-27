@@ -27,33 +27,33 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.he.func.frist.FristActivity"
+        <activity android:name="com.he.func.first.FirstActivity"
             android:screenOrientation="portrait"
             />
         <!--head list channel -->
-        <activity android:name="com.he.func.frist.channel.ChannelActivity"
+        <activity android:name="com.he.func.first.channel.ChannelActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SwapBackTheme"
             />
 
         <!-- newsDetail -->
-        <activity android:name="com.he.func.frist.fragment.news.FristNewsActivity"
+        <activity android:name="com.he.func.first.fragment.news.FristNewsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SwapBackTheme"
             />
 
-        <activity android:name="com.he.func.frist.fragment.FristNewsDetail"
+        <activity android:name="com.he.func.first.fragment.FirstNewsDetail"
             android:screenOrientation="portrait"
             android:theme="@style/SwapBackTheme"
             />
         <!--newsDetail end -->
 
         <!--first3 start -->
-        <activity android:name="com.he.func.frist.weather.wea.WeatherActivity"
+        <activity android:name="com.he.func.first.weather.wea.WeatherActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SwapBackTheme"
             />
-        <activity android:name="com.he.func.frist.weather.city.CityActivity"
+        <activity android:name="com.he.func.first.weather.city.CityActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SwapBackTheme"
             />

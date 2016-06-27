@@ -9,8 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import com.he.config.KeyConfig;
-import com.he.data.frist.weather.ChannelBean;
-import com.he.func.frist.channel.ChannelModel;
+import com.he.data.first.weather.ChannelBean;
+import com.he.func.first.channel.ChannelModel;
 
 import java.util.ArrayList;
 import java.util.HashMap;

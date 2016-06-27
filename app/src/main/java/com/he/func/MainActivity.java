@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -15,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.he.func.favorite.FavoriteActivity;
-import com.he.func.frist.FristActivity;
+import com.he.func.first.FirstActivity;
 import com.he.func.me.AccountActivity;
 import com.he.func.video.VideoActivity;
 import com.he.util.Utils;
@@ -79,7 +77,7 @@ public class MainActivity extends ActivityGroup implements View.OnClickListener,
 		pageViews = new ArrayList<>();
 
 		View view1 = getLocalActivityManager().startActivity("frist",
-				new Intent(this, FristActivity.class)).getDecorView();
+				new Intent(this, FirstActivity.class)).getDecorView();
 		View view2 = getLocalActivityManager().startActivity("two",
 				new Intent(this, VideoActivity.class)).getDecorView();
 		View view3 = getLocalActivityManager().startActivity("three",

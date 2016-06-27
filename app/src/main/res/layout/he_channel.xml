@@ -37,14 +37,14 @@
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:textColor="@color/channel"
-                    android:text="@string/frist_channel_me" />
+                    android:text="@string/first_channel_me" />
 
                 <TextView
                     android:id="@+id/my_category_tip_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
-                    android:text="@string/frist_channel_des"
+                    android:text="@string/first_channel_des"
                     android:textColor="@color/channel"
                     android:textSize="11dp" />
             </LinearLayout>
@@ -57,7 +57,7 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@color/bgcolor" />
 
-            <com.he.func.frist.channel.DragGrid
+            <com.he.func.first.channel.DragGrid
                 android:id="@+id/userGridView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:textColor="@color/channel"
                 android:text="更多频道" />
 
-            <com.he.func.frist.channel.MoreGridView
+            <com.he.func.first.channel.MoreGridView
                 android:id="@+id/otherGridView"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

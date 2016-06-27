@@ -8,12 +8,12 @@
     <string name="cancel">取消</string>
 
 
-    <string name="frist">首页</string>
-    <string name="frist_channel_me">我的频道</string>
-    <string name="frist_channel_des">单击增删频道,长按拖拽排序</string>
-    <string name="frist3_city_switch">切换城市</string>
-    <string name="frist3_city_more"><![CDATA[更多 >>]]></string>
-    <string name="Frist3_localnews">立即查看本地新闻</string>
+    <string name="first">首页</string>
+    <string name="first_channel_me">我的频道</string>
+    <string name="first_channel_des">单击增删频道,长按拖拽排序</string>
+    <string name="first3_city_switch">切换城市</string>
+    <string name="first3_city_more"><![CDATA[更多 >>]]></string>
+    <string name="First3_localnews">立即查看本地新闻</string>
     <string name="news">新闻</string>
     <string name="loading">正在加载...</string>
 
@@ -46,8 +46,8 @@
     <string name="email">邮箱：renjue@gmail.com</string>
     <string name="blog">博客: http://yyland.com/</string>
     <string name="medes">登录后 可关注好友评论和收藏</string>
-    <string name="frist_channels">频道管理</string>
-    <string name="frist3_curCity">当前城市--</string>
+    <string name="first_channels">频道管理</string>
+    <string name="first3_curCity">当前城市--</string>
 
 
 </resources>

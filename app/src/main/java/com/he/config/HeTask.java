@@ -1,11 +1,11 @@
 package com.he.config;
 
-import com.he.data.frist.news.NewsBean;
+import com.he.data.first.news.NewsBean;
 import com.he.func.favorite.FavoriteItemActivity;
-import com.he.func.frist.channel.ChannelActivity;
-import com.he.func.frist.fragment.FristNewsDetail;
-import com.he.func.frist.weather.city.CityActivity;
-import com.he.func.frist.weather.wea.WeatherActivity;
+import com.he.func.first.channel.ChannelActivity;
+import com.he.func.first.fragment.FirstNewsDetail;
+import com.he.func.first.weather.city.CityActivity;
+import com.he.func.first.weather.wea.WeatherActivity;
 import com.he.func.me.AboutmeActivity;
 import com.he.func.me.MoreLoginActivity;
 import com.he.func.video.VideoViewActivity;
@@ -51,7 +51,7 @@ public class HeTask {
 	}
 
 	public void startFristNewsDetail(Context context, NewsBean news){
-		Intent intent = new Intent(context, FristNewsDetail.class);
+		Intent intent = new Intent(context, FirstNewsDetail.class);
 		intent.putExtra("news", news);
 		ActivityCompat.startActivity((Activity) context, intent, null);
 	}
