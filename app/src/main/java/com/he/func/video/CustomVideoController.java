@@ -68,9 +68,9 @@ public class CustomVideoController extends MediaController {
     private Handler mDismissHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-        if (msg.what == 0) {
-            mVolumeBrightnessLayout.setVisibility(View.GONE);
-        }
+            if (msg.what == 0) {
+                mVolumeBrightnessLayout.setVisibility(View.GONE);
+            }
         }
     };
 
@@ -151,7 +151,7 @@ public class CustomVideoController extends MediaController {
             }
         });
         currenttime_tv=(TextView) mRoot.findViewById(R.id.currenttime_tv);
-        
+
         mVolumeBrightnessLayout = mRoot.findViewById(R.id.operation_volume_brightness);
         mOperationBg = (ImageView) mRoot.findViewById(R.id.operation_bg);
         mOperationPercent = (ImageView) mRoot.findViewById(R.id.operation_percent);

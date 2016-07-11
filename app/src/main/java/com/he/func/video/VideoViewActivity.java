@@ -275,7 +275,7 @@ public class VideoViewActivity extends Activity  {
     }
 
     private void preparePlayVideo() {
-         startLoadingAnimator();
+        startLoadingAnimator();
         mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
@@ -353,7 +353,7 @@ public class VideoViewActivity extends Activity  {
         mOjectAnimator.setRepeatCount(-1);
         mOjectAnimator.start();
     }
-    
+
     private void stopLoadingAnimator() {
         mLoadingLayout.setVisibility(View.GONE);
         mOjectAnimator.cancel();
