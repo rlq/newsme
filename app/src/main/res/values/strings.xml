@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">newsme</string>
-
+    <string name="add_alarm">alarm</string>
 </resources>

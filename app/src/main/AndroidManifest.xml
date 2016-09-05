@@ -17,7 +17,8 @@
         android:supportsRtl="true"
         android:name="com.he.func.HeApplication"
         android:theme="@style/AppTheme">
-        <activity android:name="com.he.func.MainActivity"
+
+        <!-- <activity android:name="com.he.func.MainActivity"
             android:screenOrientation="portrait"
             >
             <intent-filter>
@@ -25,7 +26,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> -->
 
         <activity android:name="com.he.func.first.FirstActivity"
             android:screenOrientation="portrait"
@@ -96,7 +97,34 @@
             />
         <!--account end-->
 
+        <!-- custom -->
 
+        <activity android:name="com.he.custom.CustomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.he.custom.phonealarm.RingAlarmActivity"/>
+        <activity android:name="com.he.custom.phonealarm.TimeSetActivity"/>
+        <activity android:name="com.he.custom.phonealarm.AlarmActivity"/>
+
+        <receiver
+            android:name="com.he.custom.utils.Timesetting">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!--注册receiver CallAlarm -->
+        <receiver
+            android:name="com.he.custom.phonealarm.CallAlarm"
+            android:process=":remote"/>
 
     </application>
 
