@@ -3,6 +3,7 @@ package com.he.custom;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -18,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.he.custom.activity.step7.MapToFile0909String;
 import com.he.custom.view.step5.RoundImage0905;
 import com.lq.ren.news.R;
 import com.he.custom.course.Draw3Graph;
@@ -59,7 +61,13 @@ public class CustomActivity extends Activity {
         //testGps();
 
         /**0905 RoundView  */
-        step5SetRoundDrawable();
+        //step5SetRoundDrawable();
+
+        /**0907 shared */
+        //startActivity(new Intent(CustomActivity.this, SharedActivity.class));
+
+        /**0909 file and hashMap */
+        mapToFileReadString();
     }
 
     private void initListView() {
@@ -147,12 +155,6 @@ public class CustomActivity extends Activity {
         mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10, 100, mListener);
     }
 
-    private void step5SetRoundDrawable() {
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.qq);
-        ImageView iv = (ImageView) findViewById(R.id.roundIv);
-        iv.setImageDrawable(new RoundImage0905(bitmap));
-    }
-
 
     private LocationListener mListener = new LocationListener() {
         @Override
@@ -196,6 +198,39 @@ public class CustomActivity extends Activity {
             last = "无法获取当前位置！";
         }
         tv.setText("您的当前位置：\n" + last);
+    }
+
+    /** 0905 Drawable */
+    private void step5SetRoundDrawable() {
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.qq);
+        ImageView iv = (ImageView) findViewById(R.id.roundIv);
+        iv.setImageDrawable(new RoundImage0905(bitmap));
+    }
+
+    /** 0909 mapToFile  call to MapToFile0909String and bean */
+    int count = 0;
+    private void mapToFileReadString() {
+        MapToFile0909String.createFile(this);
+        findViewById(R.id.addCount).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // add 重复的key
+                count++;
+                MapToFile0909String.setValue("id_" + count, count);
+                MapToFile0909String.readStringStream();
+            }
+        });
+
+        findViewById(R.id.minusCount).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count--;
+                MapToFile0909String.setValue("id_" + count, count );
+                //MapToFile0909String.readHashMapStream();
+                MapToFile0909String.readStringStream();
+            }
+        });
+
     }
 }
 

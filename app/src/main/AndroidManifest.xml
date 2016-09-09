@@ -111,7 +111,7 @@
         <activity android:name="com.he.custom.phonealarm.TimeSetActivity"/>
         <activity android:name="com.he.custom.phonealarm.AlarmActivity"/>
 
-        <receiver
+        <!--<receiver
             android:name="com.he.custom.utils.Timesetting">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -119,12 +119,14 @@
                 <action android:name="android.intent.action.TIME_SET" />
                 <action android:name="android.intent.action.LOCALE_CHANGED" />
             </intent-filter>
-        </receiver>
+        </receiver>-->
 
         <!--注册receiver CallAlarm -->
         <receiver
             android:name="com.he.custom.phonealarm.CallAlarm"
             android:process=":remote"/>
+
+        <activity android:name="com.he.custom.activity.step7.SharedActivity"/>
 
     </application>
 

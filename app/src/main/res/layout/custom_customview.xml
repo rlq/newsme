@@ -42,11 +42,27 @@
 
     <ImageView
         android:id="@+id/roundIv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="10dp"
         >
 
     </ImageView>
+
+    <!--0909 maptofile addcount -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="addCount"
+        android:id="@+id/addCount"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="minusCount"
+        android:id="@+id/minusCount"
+        android:layout_gravity="center_vertical" />
+
 
 </LinearLayout>
