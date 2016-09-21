@@ -9,7 +9,7 @@ import com.he.data.first.news.NewsBean;
 import com.he.data.first.news.NewsDetailBean;
 import com.he.data.first.news.NewsJsonUtils;
 import com.he.config.KeyConfig;
-import com.he.base.HeCallbckListener;
+import com.he.base.HeCallbackListener;
 
 import java.util.List;
 
@@ -44,7 +44,7 @@ public class FirstPresenter {
     }
 
     public void loadNews(final int type, int pageIndex){
-        fristModel.loadNews(type, pageIndex, new HeCallbckListener() {
+        fristModel.loadNews(type, pageIndex, new HeCallbackListener() {
             @Override
             public void onSuccess(String result) {
                 List<NewsBean> newsBeanList = NewsJsonUtils.getNewsBeans(result, fristModel.id);
@@ -63,7 +63,7 @@ public class FirstPresenter {
     }
 
     public void loadNewsDetail(final String docid){
-        fristModel.loadNewsDetail(docid, new HeCallbckListener() {
+        fristModel.loadNewsDetail(docid, new HeCallbackListener() {
             @Override
             public void onSuccess(String result) {
                 NewsDetailBean newsDetailBean = NewsJsonUtils.getNewsDetailBeans(result, docid);

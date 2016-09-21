@@ -3,7 +3,7 @@ package com.he.func.first;
 import android.content.Context;
 
 import com.he.config.KeyConfig;
-import com.he.base.HeCallbckListener;
+import com.he.base.HeCallbackListener;
 import com.he.data.first.FirstNewsItem;
 import com.he.util.OkHttpUtil;
 
@@ -17,7 +17,7 @@ public class FirstModel {
         this.context = context;
     }
 
-    public void loadNews(int type, int pageIndex,final HeCallbckListener listener){
+    public void loadNews(int type, int pageIndex,final HeCallbackListener listener){
 
         OkHttpUtil.doGetRequest(getUrl(type,pageIndex), new OkHttpUtil.OkHttpCallBack<String>() {
             @Override
@@ -32,7 +32,7 @@ public class FirstModel {
         });
     }
 
-    public void loadNewsDetail(String docid, final HeCallbckListener listener){
+    public void loadNewsDetail(String docid, final HeCallbackListener listener){
 
         OkHttpUtil.doGetRequest(getDetailUrl(docid), new OkHttpUtil.OkHttpCallBack<String>() {
             @Override

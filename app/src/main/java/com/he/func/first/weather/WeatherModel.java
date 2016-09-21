@@ -9,7 +9,7 @@ import android.location.LocationManager;
 import com.he.data.first.weather.CityBean;
 import com.he.data.first.weather.WeatherJsonUtils;
 import com.he.config.KeyConfig;
-import com.he.base.HeCallbckListener;
+import com.he.base.HeCallbackListener;
 import com.he.util.OkHttpUtil;
 
 import java.io.UnsupportedEncodingException;
@@ -26,7 +26,7 @@ public class WeatherModel {
         this.context = context;
     }
 
-    public void loadWeatherData(String city, final HeCallbckListener listener){
+    public void loadWeatherData(String city, final HeCallbackListener listener){
         try {
             String url = KeyConfig.WEATHER + URLEncoder.encode(city,"UTF-8");
             OkHttpUtil.OkHttpCallBack<String> callBack = new OkHttpUtil.OkHttpCallBack<String>() {
@@ -47,7 +47,7 @@ public class WeatherModel {
         }
     }
 
-    public void loadLocalData(final HeCallbckListener listener){
+    public void loadLocalData(final HeCallbackListener listener){
         LocationManager manager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
             if(context.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)

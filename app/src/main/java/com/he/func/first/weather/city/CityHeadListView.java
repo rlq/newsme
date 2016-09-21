@@ -76,41 +76,39 @@ public class CityHeadListView extends ListView {
 			return;
 		}
 		int state = mAdapter.getHeaderState(position);
-		switch (state) {
-		case HeaderAdapter.HEADER_GONE: {
-			mHeaderViewVisible = false;
-			break;
-		}
-
-		case HeaderAdapter.HEADER_VISIBLE: {
-			mAdapter.configureHeader(mHeaderView, position, MAX_ALPHA);
-			if (mHeaderView.getTop() != 0) {
-				mHeaderView.layout(0, 0, mHeaderViewWidth, mHeaderViewHeight);
+			switch (state) {
+			case HeaderAdapter.HEADER_GONE: {
+				mHeaderViewVisible = false;
+				break;
 			}
-			mHeaderViewVisible = true;
-			break;
-		}
-
-		case HeaderAdapter.HEADER_PUSHED_UP: {
-			View firstView = getChildAt(0);
-			int bottom = firstView.getBottom();
-			int headerHeight = mHeaderView.getHeight();
-			int y;
-			int alpha;
-			if (bottom < headerHeight) {
-				y = (bottom - headerHeight);
-				alpha = MAX_ALPHA * (headerHeight + y) / headerHeight;
-			} else {
-				y = 0;
-				alpha = MAX_ALPHA;
+			case HeaderAdapter.HEADER_VISIBLE: {
+				mAdapter.configureHeader(mHeaderView, position, MAX_ALPHA);
+				if (mHeaderView.getTop() != 0) {
+					mHeaderView.layout(0, 0, mHeaderViewWidth, mHeaderViewHeight);
+				}
+				mHeaderViewVisible = true;
+				break;
 			}
-			mAdapter.configureHeader(mHeaderView, position, alpha);
-			if (mHeaderView.getTop() != y) {
-				mHeaderView.layout(0, y, mHeaderViewWidth, mHeaderViewHeight + y);
+			case HeaderAdapter.HEADER_PUSHED_UP: {
+				View firstView = getChildAt(0);
+				int bottom = firstView.getBottom();
+				int headerHeight = mHeaderView.getHeight();
+				int y;
+				int alpha;
+				if (bottom < headerHeight) {
+					y = (bottom - headerHeight);
+					alpha = MAX_ALPHA * (headerHeight + y) / headerHeight;
+				} else {
+					y = 0;
+					alpha = MAX_ALPHA;
+				}
+				mAdapter.configureHeader(mHeaderView, position, alpha);
+				if (mHeaderView.getTop() != y) {
+					mHeaderView.layout(0, y, mHeaderViewWidth, mHeaderViewHeight + y);
+				}
+				mHeaderViewVisible = true;
+				break;
 			}
-			mHeaderViewVisible = true;
-			break;
-		}
 		}
 	}
 

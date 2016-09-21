@@ -20,6 +20,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.he.custom.activity.step7.MapToFile0909String;
+import com.he.custom.course.Draw4Shader;
+import com.he.custom.course.Draw918;
+import com.he.custom.view.step19.LoadingView;
 import com.he.custom.view.step5.RoundImage0905;
 import com.lq.ren.news.R;
 import com.he.custom.course.Draw3Graph;
@@ -27,7 +30,9 @@ import com.he.custom.view.CombintionView;
 import com.he.custom.view.ListDeleteAdapter;
 import com.he.custom.view.ListDeleteView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -67,7 +72,17 @@ public class CustomActivity extends Activity {
         //startActivity(new Intent(CustomActivity.this, SharedActivity.class));
 
         /**0909 file and hashMap */
-        mapToFileReadString();
+        //mapToFileReadString();
+
+        /**0918 draw point */
+        //setContentView(new Draw918(this));
+
+        /**0919 calendar add */
+        calendar0919();
+
+        /**0919 LoadingView */
+        //setContentView(new LoadingView(this));
+
     }
 
     private void initListView() {
@@ -104,9 +119,9 @@ public class CustomActivity extends Activity {
 
         //Draw2Canvas view = new Draw2Canvas(this);
 
-        Draw3Graph view = new Draw3Graph(this);
+       // Draw3Graph view = new Draw3Graph(this);
 
-        //Draw4Shader view = new Draw4Shader(this);
+        Draw4Shader view = new Draw4Shader(this);
 
         // Draw5Animator view = new Draw5Animator(this);
 
@@ -232,6 +247,21 @@ public class CustomActivity extends Activity {
         });
 
     }
+
+    /**0919 Calendar add */
+    private void calendar0919() {
+        Calendar calendar = Calendar.getInstance();
+        Log.e("HEHE", "calendar add before " + calendar);
+        calendar.add(Calendar.MONTH, -2);
+//        calendar.add(Calendar.DAY_OF_WEEK, -3);
+//        calendar.add(Calendar.WEEK_OF_YEAR, -1);
+        Log.e("HEHE", "calendar " + calendar);
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy MM dd");
+        Log.v("HEHE", "format " + format.format(calendar.getTime()));
+    }
+
+
 }
 
 
