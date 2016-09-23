@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-include ':app', ':vitamio', ':many'
-=======
 include ':app', ':vitamio'
 project(':vitamio').projectDir = new File('vitamio')
->>>>>>> dcd68fd1add3c7012865a74318f702be6e28154d
