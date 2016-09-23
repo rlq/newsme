@@ -5,7 +5,7 @@ import android.content.Context;
 import com.he.data.first.weather.CityBean;
 import com.he.data.first.weather.WeatherBean;
 import com.he.data.first.weather.WeatherJsonUtils;
-import com.he.base.HeCallbckListener;
+import com.he.base.HeCallbackListener;
 import com.he.func.first.weather.wea.WeatherView;
 import com.he.util.Utils;
 
@@ -25,7 +25,7 @@ public class WeatherPresenter {
 
    public void loadWeatherData(final String city){
        cityName = city;
-       mModel.loadWeatherData(city,new HeCallbckListener() {
+       mModel.loadWeatherData(city,new HeCallbackListener() {
            @Override
            public void onSuccess(String result) {
                //result 是一个list 需要解析
@@ -48,7 +48,7 @@ public class WeatherPresenter {
             Utils.showTips(context, "无网络连接");
             return;
         }
-        mModel.loadLocalData(new HeCallbckListener() {
+        mModel.loadLocalData(new HeCallbackListener() {
             @Override
             public void onSuccess(String result) {
                 loadWeatherData(result);

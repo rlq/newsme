@@ -1,6 +1,6 @@
 package com.he.base;
 
-public interface HeCallbckListener {
+public interface HeCallbackListener {
     void onSuccess(String result);
 
     void onFailure(String error);
