@@ -59,7 +59,9 @@ public class HttpUtil {
             if (is != null) {
                 try {
                     is.close();
-                }catch (Exception ex){}
+                }catch (Exception ex){
+
+                }
             }
         }
     }
@@ -84,8 +86,9 @@ public class HttpUtil {
             e.printStackTrace();
             return null;
         } finally {
-            if (connection != null)
+            if (connection != null) {
                 connection.disconnect();
+            }
         }
     }
 

@@ -12,12 +12,13 @@
 bin/
 gen/
 out/
+*vitamio]
+*vitamio
 
 # Gradle files
 .gradle/
 build/
 app/build/
-vitamio/build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -40,3 +41,7 @@ captures/
 
 # Keystore files
 *.jks
+
+*.properties
+
+*.properties

@@ -41,6 +41,7 @@ public class WeatherPresenter {
            }
 
        });
+
    }
 
     public void loadLocalData(){
